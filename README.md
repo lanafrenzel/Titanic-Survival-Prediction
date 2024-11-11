@@ -1,7 +1,3 @@
-Here’s an updated README based on the assumption that you’ll include the notebook and model file in the repository:
-
----
-
 # Titanic Survival Prediction
 
 This repository contains a machine learning project built to predict survival outcomes for passengers on the Titanic. Using passenger attributes like age, class, family size, and fare, this model achieves **78% accuracy on the test dataset** and **83% on the training dataset**.
