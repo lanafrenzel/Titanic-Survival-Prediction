@@ -11,9 +11,9 @@ This repository contains a machine learning project built to predict survival ou
 I’m diving into the legendary [Titanic Machine Learning competition on Kaggle](https://www.kaggle.com/c/titanic)—a rite of passage for data scientists everywhere. Just like the ‘unsinkable’ ship, I’m hoping to stay afloat as I predict who survives! Tackling this dataset feels like an initiation into the world of data science, where feature engineering and model selection are my life vests. 🚢🛟
 
 ## Repository Structure
-
-- **`Titanic_ML.ipynb`**: The main Jupyter notebook, containing the complete project workflow, including EDA, data preprocessing, feature engineering, model building, hyperparameter tuning, and evaluation.
-- **`models/`**: Directory for saving and storing trained models.
+- **notebook**: Director for the main Jupyter notebook, containing the complete project workflow, including EDA, data preprocessing, feature engineering, model building, hyperparameter tuning, and evaluation.
+  - **`Titanic_ML.ipynb`**: The main Jupyter notebook.
+- **`model/`**: Directory for storing trained model.
   - **`optimized_stacking_ensemble_model.joblib`**: The saved trained model.
 - **`README.md`**: Project overview and usage instructions.
 
