@@ -28,9 +28,9 @@ I’m diving into the legendary [Titanic Machine Learning competition on Kaggle]
 
 ### 3. Model Selection and Hyperparameter Tuning
 
-- **Models Used**: Random Forest, Gradient Boosting, SVC, and K-Nearest Neighbors (KNN).
-- **Stacking Ensemble**: Combined the base models using a Logistic Regression meta-model to improve predictive accuracy.
-- **Hyperparameter Tuning**: Used `RandomizedSearchCV` to optimize model hyperparameters for faster execution.
+- **Models Used**: Random Forest and Gradient Boosting were chosen as primary models due to their strong performance on tabular data.
+- **Bagging and Stacking Ensemble**: Applied `BaggingClassifier` to enhance generalization of Gradient Boosting and combined base models in a stacking ensemble with Logistic Regression as the meta-model.
+- **Hyperparameter Tuning**: `GridSearchCV` was used for comprehensive tuning of Random Forest and Gradient Boosting, while `RandomizedSearchCV` was used for faster tuning.
 
 ### 4. Model Evaluation
 
@@ -39,11 +39,11 @@ I’m diving into the legendary [Titanic Machine Learning competition on Kaggle]
 
 ### 5. Execution Time Optimization
 
-To reduce execution time, the following optimizations were applied:
-- Used `RandomizedSearchCV` instead of `GridSearchCV` for tuning.
-- Reduced the parameter grid size.
-- Lowered cross-validation folds from 5 to 3.
-- Focused tuning primarily on Random Forest and Gradient Boosting.
+The following optimizations reduced execution time:
+- Used a focused hyperparameter grid for key models to limit search space.
+- Set `n_jobs=-1` to utilize all CPU cores.
+- Reduced cross-validation folds from 5 to 3 for `RandomizedSearchCV`.
+- Limited tuning primarily to Random Forest and Gradient Boosting, the models with the greatest impact.
 
 ## Requirements
 
